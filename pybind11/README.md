@@ -1,0 +1,5 @@
+- apt install -y pybind11-dev python3-pybind11
+- python3 setup.py build_ext --inplace
+- ipython3
+  - import math_utils
+- /usr/bin/clangd --compile-commands-dir=build/
