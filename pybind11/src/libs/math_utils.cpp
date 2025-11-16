@@ -1,5 +1,6 @@
 #include "math_utils.hpp"
 #include <cmath>
+#include <iostream>
 
 MathUtils::MathUtils(double value) : startValue_(value) {}
 
@@ -14,4 +15,8 @@ double MathUtils::distance(double x1, double y1, double x2, double y2) {
 double MathUtils::add(double x) {
     startValue_ += x;
     return startValue_;
+}
+
+void MathUtils::print_hello() {
+    std::cout << "hello world" << std::endl;
 }

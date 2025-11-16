@@ -3,3 +3,4 @@
 - ipython3
   - import math_utils
 - /usr/bin/clangd --compile-commands-dir=build/
+- ./testpy test.py

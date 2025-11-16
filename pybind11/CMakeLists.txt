@@ -10,5 +10,9 @@ INCLUDE_DIRECTORIES("/usr/include")
 INCLUDE_DIRECTORIES("/usr/include/python3.10")
 
 AUX_SOURCE_DIRECTORY(src TEST_PYBIND11_SRC)
+AUX_SOURCE_DIRECTORY(src/libs TEST_PYBIND11_SRC)
+AUX_SOURCE_DIRECTORY(src/modules TEST_PYBIND11_SRC)
 
-PYBIND11_ADD_MODULE(math_utils ${TEST_PYBIND11_SRC}) 
+# PYBIND11_ADD_MODULE(math_utils ${TEST_PYBIND11_SRC}) 
+add_executable(testpy ${TEST_PYBIND11_SRC})
+target_link_libraries(testpy python3.10)

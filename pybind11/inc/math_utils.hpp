@@ -13,7 +13,8 @@ public:
 
     // 实例方法：给初始值加上一个数
     double add(double x);
-
+    
+    static void print_hello();
 private:
     double startValue_;
 };
